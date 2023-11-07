@@ -7,6 +7,7 @@
 
 <summary>---TUGAS 7---</summary>
 --- 
+
 ## 1.  Apa perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi Flutter?
 
 Perbedaan utama antara stateless dan stateful widget adalah bahwa stateless widget tidak memiliki keadaan internal yang dapat berubah, sementara stateful widget memiliki keadaan internal yang dapat berubah dan merespons perubahan data atau interaksi pengguna. Adapun lebih spesifiknya perbedaan keduanya adalah sebagai berikut :
