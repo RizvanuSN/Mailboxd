@@ -7,6 +7,8 @@
 
 <summary>---TUGAS 7---</summary>
 
+# Tugas 7
+
 ## 1.  Apa perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi Flutter?
 
 Perbedaan utama antara stateless dan stateful widget adalah bahwa stateless widget tidak memiliki keadaan internal yang dapat berubah, sementara stateful widget memiliki keadaan internal yang dapat berubah dan merespons perubahan data atau interaksi pengguna. Adapun lebih spesifiknya perbedaan keduanya adalah sebagai berikut :
@@ -205,3 +207,37 @@ class ShopCard extends StatelessWidget {
 
 ---
 </details>
+
+<details>
+
+<summary>---TUGAS 8---</summary>
+
+# Tugas 8
+
+## 1. Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement(), disertai dengan contoh mengenai penggunaan kedua metode tersebut yang tepat!
+
+- Navigat
+
+
+
+
+## 2. Jelaskan masing-masing layout widget pada Flutter dan konteks penggunaannya masing-masing!
+
+
+
+
+## 3. Sebutkan apa saja elemen input pada form yang kamu pakai pada tugas kali ini dan jelaskan mengapa kamu menggunakan elemen input tersebut!
+
+
+
+
+## 4. Bagaimana penerapan clean architecture pada aplikasi Flutter?
+
+
+
+## 5.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial)
+
+
+
+</details>
+
