@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../widgets/left_drawer.dart';
-import 'package:mailboxd/models/product.dart';
+import 'package:mailboxd/models/item.dart';
 
 class ShopFormPage extends StatefulWidget {
   const ShopFormPage({super.key});
@@ -9,7 +9,7 @@ class ShopFormPage extends StatefulWidget {
   State<ShopFormPage> createState() => _ShopFormPageState();
 }
 
-List<Product> productList = [];
+List<Item> itemList = [];
 
 class _ShopFormPageState extends State<ShopFormPage> {
   final _formKey = GlobalKey<FormState>();
@@ -17,11 +17,9 @@ class _ShopFormPageState extends State<ShopFormPage> {
   int _price = 0;
   String _description = "";
 
-// Global list to store products
-  void _saveProduct() {
+  void _saveItem() {
     if (_formKey.currentState!.validate()) {
-      // Add product to the global list
-      productList.add(Product(
+      itemList.add(Item(
         name: _name,
         price: _price,
         description: _description,
@@ -31,7 +29,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: const Text('Produk berhasil tersimpan'),
+            title: const Text('Item berhasil tersimpan'),
             content: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +62,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            'Form Tambah Produk',
+            'Form Tambah Item',
           ),
         ),
         backgroundColor: Colors.indigo,
@@ -79,8 +77,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
                 decoration: InputDecoration(
-                  hintText: "Nama Produk",
-                  labelText: "Nama Produk",
+                  labelText: "Nama Item",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -136,7 +133,6 @@ class _ShopFormPageState extends State<ShopFormPage> {
                 ),
                 onChanged: (String? value) {
                   setState(() {
-                    // TODO: Tambahkan variabel yang sesuai
                     _description = value!;
                   });
                 },
@@ -156,7 +152,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.indigo),
                   ),
-                  onPressed: _saveProduct,
+                  onPressed: _saveItem,
                   child: const Text(
                     "Save",
                     style: TextStyle(color: Colors.white),

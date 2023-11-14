@@ -30,11 +30,11 @@ class LeftDrawer extends StatelessWidget {
                 Padding(padding: EdgeInsets.all(10)),
                 Text(
                   "The place to keep track on the movies you have watched!",
-                  textAlign: TextAlign.center, // Align text to center
+                  textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 15, // Set font size to 15
-                    color: Colors.white, // Set text color to white
-                    fontWeight: FontWeight.normal, // Set font weight to normal
+                    fontSize: 15,
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
               ],
@@ -54,7 +54,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.add_shopping_cart),
-            title: const Text('Tambah Film'),
+            title: const Text('Tambah Item'),
             // Bagian redirection ke ShopFormPage
             onTap: () {
               Navigator.push(
@@ -66,13 +66,13 @@ class LeftDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.movie),
-            title: const Text('Lihat Produk'),
+            title: const Text('Lihat Item'),
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        ProductListPage(products: productList)),
+                        ProductListPage(items: itemList)),
               );
             },
           ),
